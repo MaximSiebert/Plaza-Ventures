@@ -1,0 +1,50 @@
+.acf-map {
+	width: 100%;
+	height: 250px;
+}
+
+/* fixes potential theme css conflict */
+
+.acf-map img {
+	max-width: inherit !important;
+}
+
+.site-design p {
+	color: var(--dark-gray);
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	font-size: .688em;
+	margin-bottom: 0;
+	margin-top: .45rem;
+}
+
+.site-design a {
+	color: var(--mid-gray);
+}
+
+.site-design a:hover {
+	color: var(--red);
+}
+
+.social-icons a:last-child {
+	margin-right: 0;
+}
+
+.directions {
+	flex-basis: 193px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.directions-wrapper .mr4 {
+	margin-right: 1.4rem;
+}
+
+@media (--breakpoint-not-small) {
+	.directions-wrapper .mr4-ns {
+		margin-right: 1.4rem;
+	}
+	.directions-wrapper .pl4-ns {
+		padding-left: 1.4rem;
+	}
+}

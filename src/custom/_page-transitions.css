@@ -1,0 +1,42 @@
+/*
+ * CSS Animations
+ * Don't forget to add vendor prefixes!
+ * From: http://smoothstate.com/typical-implementation.html
+ */
+
+/* 
+.m-scene .scene_element {
+    animation-duration: 1s;
+    animation-delay: .3s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: both;
+}
+
+.m-scene .scene_element--fadein {
+    animation-name: fadeIn;
+}
+
+.m-scene.slide-out .scene_element {
+    animation-direction: alternate-reverse;
+} */
+
+/*
+ * Keyframes
+ */
+
+body {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: .3s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

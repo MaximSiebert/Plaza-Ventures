@@ -1,0 +1,84 @@
+.featured-image {
+    height: 550px;
+    height: 35vw;
+}
+
+.featured-image img {
+    object-fit: cover;
+    height: inherit;
+}
+
+.details-client-logo img {
+    width: auto;
+    max-height: 90px;
+}
+
+.funds span:not(:first-child):before {
+    content: "• ";
+}
+
+.highlight-image:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+    background: none;
+}
+
+.highlight-image img {
+    max-height: 100px;
+    width: auto;
+    max-width: 95%;
+}
+
+.stat:last-child {
+    margin-bottom: 0;
+}
+
+@media (--breakpoint-not-small) {
+    .stat:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }
+}
+
+.image-list img:last-child {
+    margin-bottom: 0;
+}
+
+.portfolio-pagination * {
+    transition: all .15s ease-in;
+}
+
+.portfolio-pagination:hover div {
+    border-color: var(--red) !important;
+}
+
+.portfolio-pagination div {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+}
+
+@media (--breakpoint-not-small) {
+    .portfolio-pagination div {
+        padding-left: 4.8rem;
+        padding-right: 4.8rem;
+    }
+}
+
+.portfolio-pagination .arrow {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.portfolio-pagination:hover .title {
+    color: var(--red);
+}
+
+.twitter-timeline {
+    height: 500px !important;
+}
+
+@media (--breakpoint-large) {
+    .twitter-timeline {
+        height: 900px !important;
+    }
+}

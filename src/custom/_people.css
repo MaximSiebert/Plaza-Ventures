@@ -1,0 +1,57 @@
+.team.container {
+    width: 90%;
+    max-width: 1400px;
+}
+
+.member-image {
+    height: 0%;
+    padding-bottom: 134%
+}
+
+.member-image img {
+    object-fit: cover;
+}
+
+.network.container {
+    width: 90%;
+    max-width: 1400px;
+}
+
+@media (--breakpoint-not-small) {
+    .team.container {
+        width: 95%;
+        max-width: calc(1400px + 2.5%);
+    }
+    .team-member {
+        padding: 0 2.5%;
+    }
+}
+
+@media (--breakpoint-medium) {
+    .partner {
+        padding-left: 2.4%;
+        padding-right: 2.4%;
+    }
+    .network.container {
+        width: 94.8%;
+        max-width: calc(1400px + 2.4%);
+    }
+}
+
+@media (--breakpoint-large) {
+    .partner {
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+    .partners .partner {
+        padding-left: 1.5%;
+        padding-right: 3%;
+    }
+    .network.container {
+        width: 93%;
+        max-width: calc(1400px + 1.5%);
+    }
+    .network-description {
+        margin-left: 3%;
+    }
+}

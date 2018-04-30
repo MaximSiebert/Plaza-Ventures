@@ -1,0 +1,147 @@
+.featured-post-image, .post-image-article {
+    height: 200px;
+}
+
+@media (--breakpoint-medium) {
+    .featured-post-image, .post-image-article {
+        height: 315px;
+    }
+}
+
+@media (--breakpoint-large) {
+    .post-image-article {
+        height: 430px;
+    }
+    .featured-post-image {
+        height: 315px;
+    }
+}
+
+.list-item {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+@-moz-document url-prefix() {
+    .list-item {
+        margin-bottom: 1.8rem !important;
+    }
+}
+
+@media (--breakpoint-medium) {
+    .list-item {
+        width: 49%;
+        margin-bottom: 2%;
+    }
+}
+
+@media (--breakpoint-large) {
+    .list-item {
+        width: 48.5%;
+        margin-bottom: 3%;
+    }
+}
+
+.article-image {
+    height: 165px;
+}
+
+.article-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.alm-reveal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.alm-btn-wrap {
+    text-align: center;
+    position: relative;
+}
+
+@media (--breakpoint-medium-and-small) {
+    .alm-btn-wrap {
+        margin-bottom: 4rem;
+    }
+}
+
+.alm-load-more-btn:before {
+    content: "";
+    position: absolute;
+    border-top: 1px dotted var(--mid-gray);
+    left: 0;
+    width: 38%;
+    top: 77%;
+}
+
+.alm-load-more-btn:after {
+    content: "";
+    position: absolute;
+    border-top: 1px dotted var(--mid-gray);
+    right: 0;
+    width: 38%;
+    top: 77%;
+}
+
+.alm-load-more-btn {
+    display: inline-block;
+    border: none;
+    background: var(--mid-gray);
+    color: #fff;
+    font-family: inherit;
+    border-radius: 3px;
+    padding: .75rem 1.25rem;
+    margin-top: 3rem;
+    font-size: .875rem;
+    cursor: pointer;
+}
+
+.alm-load-more-btn.done {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.alm-load-more-btn:hover {
+    color: #fff;
+    background: var(--red);
+}
+
+.archive-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.archive-nav li:last-child {
+    padding-right: 0;
+    margin-right: 0;
+    background: none;
+}
+
+.archive-nav li {
+    padding-right: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: .5em;
+    background-image: linear-gradient(to bottom, #35353a 40%, rgba(255, 255, 255, 0) 20%);
+    background-position: right;
+    background-size: 1px 3px;
+    background-repeat: repeat-y;
+}
+
+.archive-nav li a {
+    color: var(--blue);
+}
+
+.archive-nav li a:hover {
+    color: var(--red);
+}
+
+.archive-nav li.current-menu-item a {
+    color: var(--dark-gray);
+}

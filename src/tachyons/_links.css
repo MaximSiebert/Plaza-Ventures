@@ -1,0 +1,17 @@
+/*
+
+   LINKS
+   Docs: http://tachyons.io/docs/elements/links/
+
+*/
+
+.link {
+  text-decoration: none;
+  transition: all .15s ease-in;
+}
+
+button:focus {
+  outline: none;
+}
+
+

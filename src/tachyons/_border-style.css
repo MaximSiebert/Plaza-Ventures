@@ -1,0 +1,114 @@
+/*
+
+   BORDER STYLES
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Depends on base border module in _borders.css
+
+   Base:
+     b = border-style
+
+   Modifiers:
+     --none   = none
+     --dotted = dotted
+     --dashed = dashed
+     --solid  = solid
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+ */
+
+.b--dotted {
+  background-image: linear-gradient(to right, #35353a 40%, rgba(255, 255, 255, 0) 20%);
+  background-position: top;
+  background-size: 3px 1px;
+  background-repeat: repeat-x;
+}
+
+.b--dotted.bb {
+  background-position: bottom;
+}
+
+.b--dashed {
+  border-style: dashed;
+}
+
+.b--solid {
+  border-style: solid;
+}
+
+.b--none {
+  border-style: none;
+}
+
+@media (--breakpoint-not-small) {
+  .b--dotted-ns {
+    background-image: linear-gradient(to right, #35353a 40%, rgba(255, 255, 255, 0) 20%);
+    background-position: top;
+    background-size: 3px 1px;
+    background-repeat: repeat-x;
+  }
+  .b--dotted.bb {
+    background-position: bottom;
+  }
+  .b--dashed-ns {
+    border-style: dashed;
+  }
+  .b--solid-ns {
+    border-style: solid;
+  }
+  .b--none-ns {
+    border-style: none;
+  }
+  .bn-ns.bb {
+    background: none;
+  }
+}
+
+@media (--breakpoint-medium) {
+  .b--dotted-m {
+    background-image: linear-gradient(to right, #35353a 40%, rgba(255, 255, 255, 0) 20%);
+    background-position: top;
+    background-size: 3px 1px;
+    background-repeat: repeat-x;
+  }
+  .b--dotted.bb {
+    background-position: bottom;
+  }
+  .b--dashed-m {
+    border-style: dashed;
+  }
+  .b--solid-m {
+    border-style: solid;
+  }
+  .b--none-m {
+    border-style: none;
+  }
+}
+
+@media (--breakpoint-large) {
+  .b--dotted-l {
+    background-image: linear-gradient(to right, #35353a 40%, rgba(255, 255, 255, 0) 20%);
+    background-position: top;
+    background-size: 3px 1px;
+    background-repeat: repeat-x;
+  }
+  .b--dotted.bb {
+    background-position: bottom;
+  }
+  .b--dashed-l {
+    border-style: dashed;
+  }
+  .b--solid-l {
+    border-style: solid;
+  }
+  .b--none-l {
+    border-style: none;
+  }
+  .bn-l.bb, .bn-l.bt, .bn-ns.bb, .bn-ns.bt {
+    background: none;
+  }
+}

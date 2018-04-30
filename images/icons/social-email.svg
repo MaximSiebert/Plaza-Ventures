@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.54" height="23.96" viewBox="0 0 33.54 23.96">
+  <title>social-email</title>
+  <g>
+    <path d="M32.35,0H1A1,1,0,0,0,.8,0l15.78,13.3Z" style="fill: #696d77"/>
+    <path d="M33.54,22.56V1s0,0,0,0L23.88,9.13Z" style="fill: #696d77"/>
+    <path d="M17.06,14.89a.75.75,0,0,1-1,0l-5.44-4.58L.86,23.93A.94.94,0,0,0,1,24H32.54a.92.92,0,0,0,.14,0l-10-13.83Z" style="fill: #696d77"/>
+    <polygon points="0 1.33 0 22.56 9.51 9.34 0 1.33" style="fill: #696d77"/>
+  </g>
+</svg>
