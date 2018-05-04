@@ -1,4 +1,5 @@
 <?php
+
 add_action('after_setup_theme', 'blankslate_setup');
 function blankslate_setup()
 {
@@ -198,17 +199,18 @@ function fb_opengraph()
     <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('stylesheet_directory'); ?>/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('stylesheet_directory'); ?>/favicons/favicon-16x16.png">
     <link rel="manifest" href="<?php bloginfo('stylesheet_directory'); ?>/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#e7040f">
-    <meta name="theme-color" content="#e7040f">
+    <meta name="msapplication-TileColor" content="#f70f26">
+    <meta name="theme-color" content="#f70f26">
 
 <?php
 } else { ?>
+        <meta property="og:image" content="<?php echo $img_src; ?>"/>
         <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('stylesheet_directory'); ?>/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('stylesheet_directory'); ?>/favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('stylesheet_directory'); ?>/favicons/favicon-16x16.png">
         <link rel="manifest" href="<?php bloginfo('stylesheet_directory'); ?>/site.webmanifest">
-        <meta name="msapplication-TileColor" content="#e7040f">
-        <meta name="theme-color" content="#e7040f">
+        <meta name="msapplication-TileColor" content="#f70f26">
+        <meta name="theme-color" content="#f70f26">
    <?php }
 }
 add_action('wp_head', 'fb_opengraph', 5);

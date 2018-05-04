@@ -335,7 +335,7 @@ body.open {
     width: 4.5rem;
 }
 
-.website + .responsive-embed.widescreen {
+.website+.responsive-embed.widescreen {
     display: none;
 }
 

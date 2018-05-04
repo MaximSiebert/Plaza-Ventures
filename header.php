@@ -2,9 +2,21 @@
 <html <?php language_attributes(); ?>>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118291530-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-118291530-1');
+    </script>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+    <?php if ( is_front_page() || is_home()) : ?>
+        <meta property="og:image" content="http://plaza.ventures/wp-content/themes/blankslate/images/placeholder.png"/>
+    <?php endif; ?>
     <?php wp_head(); ?>
 </head>
 

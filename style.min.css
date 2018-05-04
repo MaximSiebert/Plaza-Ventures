@@ -2166,7 +2166,7 @@ body.open { overflow-y: hidden; }
 .overlay { padding: 20px 0; }
 .content-column { overflow-y: auto; }
 .exit-flag { width: 4.5rem; }
-.website + .responsive-embed.widescreen { display: none; }
+.website+.responsive-embed.widescreen { display: none; }
 .circle { width: 202px; }
 .last:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; background: none; }
 .last:last-child>.bb { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; background: none; }
@@ -2398,6 +2398,9 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; box-shado
 .portfolio-pagination .arrow { top: 50%; -webkit-transform: translateY( -50% ); transform: translateY( -50% ); }
 .portfolio-pagination:hover .title { color: #f70f26; }
 .twitter-timeline { height: 500px !important; }
+.twitter-iframe-container { position: relative; padding-bottom: 500px; height: 0; overflow: hidden; }
+.twitter-iframe-container iframe { position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; }
+.twitter-iframe-container iframe * { max-width: 100% !important; width: 100% !important; }
 .post-image img { -o-object-fit: cover; object-fit: cover; height: 100%; width: 100%; }
 .client-logo-list { height: 100px; padding: 20px; }
 .post-image { height: 300px; }
@@ -3888,6 +3891,7 @@ body { -webkit-animation-name: fadeIn; animation-name: fadeIn; -webkit-animation
  .swiper-navigation { top: 100px; -webkit-transform: translateY( 0 ); transform: translateY( 0 ); }
  .w-grid-10-ns.partners { width: 86.33%; }
  .twitter-timeline { height: 900px !important; }
+ .twitter-iframe-container { padding-bottom: 900px; }
  .portfolio-archive-swiper .swiper-navigation { top: 100px; }
  .portfolio-archive-swiper .swiper-navigation .container { width: 95%; }
  .portfolio-archive-swiper .swiper-slide .container { width: 87%; }

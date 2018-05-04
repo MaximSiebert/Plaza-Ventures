@@ -1,7 +1,10 @@
 <div class="w-grid-3-l w-100 ml-auto db-l bg-none-l bg-gray-ms">
     <div class="db-l flex flex-wrap container-m container-so pv0-l pv5">
         <div class="mb4-l pb2-l w-grid-7-m w-100 order-0-ns order-2">
-            <a class="twitter-timeline mb4" data-height="900" data-link-color="#3E96F1" href="https://twitter.com/PlazaVentures/lists/pv-community-buzz">Tweets by The PV Family</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="twitter-iframe-container">
+                <a class="twitter-timeline mb4" data-height="900" data-link-color="#3E96F1" href="https://twitter.com/PlazaVentures/lists/pv-community-buzz">Tweets by The PV Family</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
         </div>
         <div class="w-grid-4-m w-100 ml-auto-m mb0-ns mb4">
             <div class="bg-blue ph3 pv4 white">
